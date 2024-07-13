@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecom API</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-navbar shadow-sm sticky-top">
+      <div class="top-navbar">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block"
+            >
+              <h5 class="brand-name">Kuch bhi</h5>
+            </div>
+            <div class="col-md-5 my-auto">
+              <form role="search">
+                <div class="input-group">
+                  <input
+                    type="search"
+                    placeholder="Search your product"
+                    class="form-control"
+                  />
+                  <button class="btn bg-white" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 my-auto">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-shopping-cart"></i> Cart (0)
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-heart"></i> Wishlist (0)
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-user"></i> Username
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa fa-user"></i> Profile</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa fa-list"></i> My Orders</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa fa-heart"></i> My Wishlist</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa fa-shopping-cart"></i> My Cart</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa fa-sign-out"></i> Logout</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand d-block d-sm-block d-md-none d-lg-none"
+            href="#"
+          >
+            Funda Ecom
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Featured Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fashions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Appliances</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- javascript: -->
+    <div class="container">
+      <div class="products"></div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- footer ........................................................... -->
+
+    <main>Content</main>
+
+    <footer class="flex-rw">
+      <ul class="footer-list-top">
+        <li>
+          <h4 class="footer-list-header">About Kuch Bhi</h4>
+        </li>
+        <li>
+          <a
+            href="/shop/about-mission"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >GET TO KNOW US</a
+          >
+        </li>
+        <li>
+          <a
+            href="/promos.html"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >PROMOS</a
+          >
+        </li>
+        <li>
+          <a
+            href="/retailers/new-retailers.html"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >BECOME A RETAILER</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="/job-openings.html"
+            itemprop="significantLink"
+            class="generic-anchor footer-list-anchor"
+            >JOB OPENINGS</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="/shop/about-show-schedule"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >EVENTS</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-list-top">
+        <li>
+          <h4 class="footer-list-header">The Gift Selection</h4>
+        </li>
+
+        <li>
+          <a href="/Angels/cat/id/70" class="generic-anchor footer-list-anchor"
+            >ANGEL FIGURINES</a
+          >
+        </li>
+        <li>
+          <a
+            href="/Home-Decor/cat/id/64"
+            class="generic-anchor footer-list-anchor"
+            >HOME DECOR</a
+          >
+        </li>
+        <li>
+          <a href="/Mugs/cat/id/32" class="generic-anchor footer-list-anchor"
+            >MUGS</a
+          >
+        </li>
+        <li>
+          <a
+            href="/Pet-Lover/cat/id/108"
+            class="generic-anchor footer-list-anchor"
+            >PET LOVER</a
+          >
+        </li>
+        <li>
+          <a
+            href="/Ladies-Accessories/cat/id/117"
+            class="generic-anchor footer-list-anchor"
+            target="_blank"
+            >HANDBAGS & JEWELRY</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-list-top">
+        <li id="help">
+          <h4 class="footer-list-header">Please Help Me</h4>
+        </li>
+        <li>
+          <a
+            href="/shop/about-contact"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >CONTACT</a
+          >
+        </li>
+        <li>
+          <a
+            href="/faq.html"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >FAQ</a
+          >
+        </li>
+        <li id="find-a-store">
+          <a
+            href="/shop/store-locator"
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >STORE LOCATOR</a
+          >
+        </li>
+        <li id="user-registration">
+          <a
+            href="/shop/user-registration?URL="
+            class="generic-anchor footer-list-anchor"
+            itemprop="significantLink"
+            >NEW USERS</a
+          >
+        </li>
+        <li id="order-tracking">
+          <a
+            href="/shop/order-status"
+            itemprop="significantLink"
+            class="generic-anchor footer-list-anchor"
+            >ORDER STATUS</a
+          >
+        </li>
+      </ul>
+      <section class="footer-social-section flex-rw">
+        <span class="footer-social-overlap footer-social-connect">
+          CONNECT <span class="footer-social-small">with</span> US
+        </span>
+        <span class="footer-social-overlap footer-social-icons-wrapper">
+          <a
+            href="https://www.pinterest.com/paviliongift/"
+            class="generic-anchor"
+            target="_blank"
+            title="Pinterest"
+            itemprop="significantLink"
+            ><i class="fa fa-pinterest"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/paviliongift"
+            class="generic-anchor"
+            target="_blank"
+            title="Facebook"
+            itemprop="significantLink"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/PavilionGiftCo"
+            class="generic-anchor"
+            target="_blank"
+            title="Twitter"
+            itemprop="significantLink"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            href="http://instagram.com/paviliongiftcompany"
+            class="generic-anchor"
+            target="_blank"
+            title="Instagram"
+            itemprop="significantLink"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg"
+            class="generic-anchor"
+            target="_blank"
+            title="Youtube"
+            itemprop="significantLink"
+            ><i class="fa fa-youtube"></i
+          ></a>
+          <a
+            href="https://plus.google.com/+Paviliongift/posts"
+            class="generic-anchor"
+            target="_blank"
+            title="Google Plus"
+            itemprop="significantLink"
+            ><i class="fa fa-google-plus"></i
+          ></a>
+        </span>
+      </section>
+      <section class="footer-bottom-section flex-rw">
+        <div class="footer-bottom-wrapper">
+          <i class="fa fa-copyright" role="copyright"> </i> 2019 Pavilion in
+          <address class="footer-address" role="company address">
+            Bergen, NY
+          </address>
+          <span class="footer-bottom-rights"> - All Rights Reserved - </span>
+        </div>
+        <div class="footer-bottom-wrapper">
+          <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow"
+            >Terms</a
+          >
+          |
+          <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow"
+            >Privacy</a
+          >
+        </div>
+      </section>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
